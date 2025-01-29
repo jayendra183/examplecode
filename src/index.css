@@ -1,0 +1,293 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    height: 80px;
+  }
+}
+
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.services-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.6rem;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mobile-menu.flex {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Nav right section */
+.nav-right {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+/* Search box */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  color: white;
+  width: 200px;
+  font-size: 0.9rem;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.25rem;
+}
+
+/* Contact button */
+.contact-btn {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+/* Language select */
+.language-select {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-select a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.language-select a.active {
+  opacity: 1;
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  min-height: calc(100vh - 70px);
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 8rem 2rem 2rem;
+    min-height: calc(100vh - 96px);
+  }
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+.title-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title-row {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+.schedule-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .schedule-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+}
+

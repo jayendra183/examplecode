@@ -1,0 +1,237 @@
+/* ConnectifyAdvantages.css */
+/* Main container styles */
+.hize-advantages {
+  background-color: #f8f0ff;
+  padding: 6rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo-container {
+  margin-bottom: 2rem;
+  margin-right: 9em;
+}
+
+.company-logo {
+  height: 200px;
+  width: auto;
+}
+
+/* Content layout styles */
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.advantage-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Text styles */
+.advantage-text {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.advantage-text.growth {
+  color: #1a1a1a;
+}
+
+.advantage-text.talent {
+  color: #008080;
+  font-size: 2.8rem;
+  white-space: nowrap;
+}
+
+.advantage-text.wellness {
+  color: #1a1a1a;
+}
+
+/* Image styles */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Button styles */
+.explore-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  white-space: nowrap;
+  margin-right: 20em;
+}
+
+.explore-btn:hover {
+  background-color: #d8b4ff;
+  color: white;
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+  .advantages-container {
+    max-width: 1200px;
+  }
+  
+  .logo-container {
+    margin-right: 9em;
+  }
+  
+  .explore-btn {
+    margin-right: 20em;
+  }
+
+  .advantage-row {
+    flex-direction: row;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .advantage-text {
+    font-size: 2.8rem;
+  }
+  
+  .advantage-text.talent {
+    font-size: 2.4rem;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .company-logo {
+    height: 150px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .hize-advantages {
+    padding: 4rem 0;
+  }
+  
+  .logo-container {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .advantages-content {
+    gap: 2rem;
+  }
+
+  /* First row styling */
+  .advantage-row:first-child {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Second row styling */
+  .advantage-row:nth-child(2) {
+    display: grid;
+    grid-template-areas:
+      "img1"
+      "text"
+      "img2";
+    gap: 1.5rem;
+  }
+
+  .advantage-row:nth-child(2) .talent-img {
+    grid-area: img1;
+    justify-self: center;
+  }
+
+  .advantage-row:nth-child(2) .advantage-text.talent {
+    grid-area: text;
+    text-align: center;
+    white-space: normal;
+    font-size: 1.8rem;
+  }
+
+  .advantage-row:nth-child(2) .culture-img {
+    grid-area: img2;
+    justify-self: center;
+  }
+
+  /* Third row styling */
+  .advantage-row:last-child {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .company-logo {
+    height: 100px;
+  }
+  
+  .explore-btn {
+    margin: 2rem auto 0;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .advantage-text {
+    font-size: 2rem;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .hize-advantages {
+    padding: 3rem 0;
+  }
+  
+  .advantage-text {
+    font-size: 1.8rem;
+  }
+  
+  .advantage-text.talent {
+    font-size: 1.6rem;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .company-logo {
+    height: 80px;
+  }
+}
