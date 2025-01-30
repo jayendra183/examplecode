@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const HeroSection = () => {
   return (
@@ -6,11 +6,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1 className="hero-title">
           <div className="title-row">
-            <img
-              src="image1.jpg"
-              alt=""
-              className="profile-img"
-            />
+            <img src="image1.jpg" alt="" className="profile-img" />
             <span>Revolutionizing Professional</span>
             <img src="/image2.jpg" alt="" className="profile-img" />
           </div>
@@ -19,14 +15,17 @@ const HeroSection = () => {
             <img src="/image3.jpg" alt="" className="profile-img" />
           </div>
         </h1>
-
-        <p className="hero-description">Where LinkedIn Meets Omegle: Meet Professionals in Real-Time via Video Chat</p>
-
-        <button className="schedule-btn">Schedule a Free Consultation!</button>
+        
+        <p className="hero-description">
+          Where LinkedIn Meets Omegle: Meet Professionals in Real-Time via Video Chat
+        </p>
+        
+        <button className="schedule-btn">
+          Schedule a Free Consultation!
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
-
+export default HeroSection;

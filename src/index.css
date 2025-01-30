@@ -46,12 +46,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-@media (min-width: 1024px) {
-  .logo {
-    height: 80px;
-  }
-}
-
 .nav-links {
   display: none;
 }
@@ -89,6 +83,7 @@ body {
   border: none;
   color: white;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -100,22 +95,52 @@ body {
 /* Mobile menu */
 .mobile-menu {
   position: fixed;
-  top: 70px;
+  top: 97px;
   left: 0;
   width: 100%;
   background-color: #1a1a1a;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 1rem;
+  z-index: 1000;
 }
 
-.mobile-menu.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
+.mobile-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.mobile-menu.flex {
-  transform: translateY(0);
-  opacity: 1;
+.mobile-services-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-bottom-section {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
+}
+
+.mobile-bottom-section .search-box {
+  margin-bottom: 1rem;
+}
+
+.mobile-bottom-section .search-box input {
+  width: 100%;
+}
+
+.mobile-bottom-section .contact-btn {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.mobile-bottom-section .language-select {
+  justify-content: center;
 }
 
 /* Nav right section */
@@ -155,6 +180,7 @@ body {
   border: none;
   color: white;
   padding: 0.25rem;
+  cursor: pointer;
 }
 
 /* Contact button */
@@ -166,6 +192,7 @@ body {
   padding: 0.6rem 1.5rem;
   font-weight: 500;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 /* Language select */
@@ -281,6 +308,7 @@ body {
   font-size: 1rem;
   transition: background-color 0.3s ease;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -290,4 +318,3 @@ body {
     margin-top: 1.5rem;
   }
 }
-

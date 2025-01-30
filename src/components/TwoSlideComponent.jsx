@@ -17,7 +17,7 @@ const HorizontalScrollCarousel = () => {
     offset: ["start start", "end end"]
   })
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"])
+  const x = useTransform(scrollYProgress, [0, 1.5], ["0%", "-50%"])
 
   return (
     <section ref={targetRef} className="carousel-section">
